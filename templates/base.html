@@ -13,8 +13,19 @@
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
 </head>
 <body>
+    <!-- use 'main' to load conent without nav & footer-->
     {% block main %}
     
+     <!--navbar-->
+     {% include "components/navbar.html" %}
+    
+      <!-- use 'body' to load conent with nav & footer-->
+      {% block body %}
+      {% endblock body %}
+
+     <!--footer-->
+     {% include "components/footer.html" %}
+
     {% endblock main %}
 
     <!--bootstrap js files-->
