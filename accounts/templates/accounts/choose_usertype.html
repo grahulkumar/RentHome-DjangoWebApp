@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+<!--Page title-->
+{% block title %} Choose User {% endblock title %}
+
+<!--body without navbar and footer-->
+{% block main %}
+
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="px-3 w-100" style="max-width: 720px">
+            <h1 class="text-center mb-3 text-head">Choose <span class="text-primary">User</span></h1>
+
+            <div class="row">
+                <div class="col-md-6 p-2">
+                    <div class="card px-2 py-4 bg-white border rounded-2">
+                        <h5 class="text-primary text-center">As an Owner</h5>
+                        <ul>
+                            <li>List your property for rent</li>
+                            <li>Manage your rental property easily</li>
+                            <li>Easily track your rental activity</li>
+                        </ul>                        
+                        <a href="{% url 'register' %}?type=Owner" class="btn btn-primary text-head mx-2">Register as Owner </a>
+                    </div>
+                </div>
+                <div class="col-md-6 p-2">
+                    <div class="card px-2 py-4 bg-white border rounded-2">
+                        <h5 class="text-primary text-center">As a Renter</h5>
+                        <ul>
+                            <li>Explore available homes</li>
+                            <li>Manage your bookings effortlessly.</li>
+                            <li>Find your ideal place to stay.</li>
+                        </ul>
+                        <a href="{% url 'register' %}?type=Renter" class="btn btn-secondary text-head mx-2">Register as Renter </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</div>
+
+{% endblock main %}
