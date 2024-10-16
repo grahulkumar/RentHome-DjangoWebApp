@@ -1,3 +1,82 @@
 /* import Poppins and Robot fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* custom color */
+:root {
+    --color-royalblue: #4160e1;
+    --color-darkroyalblue: #3654b4;
+    --color-coral: #FF6F61;
+    --color-darkcoral: #e65b50;
+    --color-seagreen: #2E8B57;
+    --color-lightgrey: #f0f0f0;
+    --color-darkslategrey: #2F4F4F;
+    --color-dimgrey: #696969;
+    --color-forestgreen: #228B22;
+    --color-firebrick: #B22222;
+    --color-white:#FFFFFF;
+}
+
+body {
+    background-color: var(--color-lightgrey);
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-head {
+    font-family: 'Poppins', sans-serif;
+}
+
+.no-line {
+    text-decoration: none;
+    /* remove underline in anchor tag*/
+}
+
+.bg-royalblue {
+    background-color: var(--color-royalblue);
+}
+
+.text-blue {
+    color: var(--color-royalblue);
+}
+
+.btn-blue {
+    background-color: var(--color-royalblue);
+    border:none;
+    color: var(--color-white);
+}
+.btn-blue:hover {
+    background-color: var(--color-darkroyalblue);
+    color: var(--color-white);
+}
+
+.btn-coral {
+    background-color: var(--color-coral);
+    border: none;
+    color: var(--color-white);
+}
+.btn-coral:hover {
+    background-color: var(--color-darkcoral);
+    color: var(--color-white);
+}
+
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg') no-repeat center center/cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* for tablet screen */
+@media only screen and (min-width: 768px) {
+    
+}
+
+
+/* for desktop screen */
+@media only screen and (min-width: 992px) {
+    
+}
