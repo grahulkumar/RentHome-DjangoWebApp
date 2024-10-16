@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+# owner home page view
+def owner_home(request):
+    return render(request, "owners/owner_home.html")
