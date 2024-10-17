@@ -11,7 +11,7 @@ def send_html_email(subject, recipient_email, context):
     email = EmailMessage(
         subject=subject,
         body=html_content,
-        from_email=settings.EMAIL_HOST_USER,
+        from_email=f"Rent Home <{settings.EMAIL_HOST_USER}>",
         to=[recipient_email],
     )
 
