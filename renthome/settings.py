@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'accounts',
     'owners',
     'users',
+    'email_services',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #register our custom user model from accounts app
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# Email configuration in settings.py
+EMAIL_BACKEND = env('EMAIL_BACKEND')
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_PORT = env.int('EMAIL_PORT', default=587)
+EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS', default=True)
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')

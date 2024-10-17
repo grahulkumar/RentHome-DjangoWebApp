@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email from RentHome</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 20px;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .logo-container {
+        text-align: center;
+        margin-bottom: 25px;
+        background-color: #0d6efd;
+        color: white;
+        border-radius: 8px;
+        padding: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .logo-container img {
+        max-width: 150px;
+      }
+      .message-container {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .message-container p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+      }
+      .footer a {
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+      hr {
+        height: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Logo Section -->
+      <div class="logo-container">
+        <h1 style="margin-bottom: 0px">Rent Home</h1>
+        <p style="margin-top: 0px">Easy renting here</p>
+      </div>
+
+      <!-- Dynamic Message Section -->
+      <div class="message-container">
+        <h3>Hello {{name}}</h3>
+        <p>{{ message }}</p>
+      </div>
+
+      <!-- Footer Section -->
+      <hr />
+      <div class="footer">
+        <p style="margin-bottom: 0px">
+          Developed by <br /><strong>Rahulkumar Gupta</strong>
+        </p>
+        <p style="margin-top: 5px">
+          <a
+            href="https://github.com/grahulkumar"
+            target="_blank"
+            style="margin-right: 0px"
+          >
+            <img src="https://img.icons8.com/ios-filled/20/000000/github.png" />
+          </a>
+          <a href="https://linkedin.com/in/grahulkumar" target="_blank">
+            <img
+              src="https://img.icons8.com/ios-filled/20/000000/linkedin.png"
+            />
+          </a>
+        </p>
+        <p>&copy; 2024, Rent Home. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
