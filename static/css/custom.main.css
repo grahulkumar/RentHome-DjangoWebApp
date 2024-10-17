@@ -3,80 +3,79 @@
 
 /* custom color */
 :root {
-    --color-royalblue: #4160e1;
-    --color-darkroyalblue: #3654b4;
-    --color-coral: #FF6F61;
-    --color-darkcoral: #e65b50;
-    --color-seagreen: #2E8B57;
-    --color-lightgrey: #f0f0f0;
-    --color-darkslategrey: #2F4F4F;
-    --color-dimgrey: #696969;
-    --color-forestgreen: #228B22;
-    --color-firebrick: #B22222;
-    --color-white:#FFFFFF;
+  --color-royalblue: #4160e1;
+  --color-darkroyalblue: #3654b4;
+  --color-coral: #ff6f61;
+  --color-darkcoral: #e65b50;
+  --color-seagreen: #2e8b57;
+  --color-lightgrey: #f0f0f0e7;
+  --color-darkslategrey: #2f4f4f;
+  --color-dimgrey: #696969;
+  --color-forestgreen: #228b22;
+  --color-firebrick: #b22222;
+  --color-white: #ffffff;
 }
 
 body {
-    background-color: var(--color-lightgrey);
-    font-family: 'Roboto', sans-serif;
+  background-color: var(--color-lightgrey);
+  font-family: 'Roboto', sans-serif;
 }
 
 .text-head {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .no-line {
-    text-decoration: none;
-    /* remove underline in anchor tag*/
+  text-decoration: none;
+  /* remove underline in anchor tag*/
 }
 
 .bg-royalblue {
-    background-color: var(--color-royalblue);
+  background-color: var(--color-royalblue);
 }
 
 .text-blue {
-    color: var(--color-royalblue);
+  color: var(--color-royalblue);
 }
 
 .btn-blue {
-    background-color: var(--color-royalblue);
-    border:none;
-    color: var(--color-white);
+  background-color: var(--color-royalblue);
+  border: none;
+  color: var(--color-white);
 }
 .btn-blue:hover {
-    background-color: var(--color-darkroyalblue);
-    color: var(--color-white);
+  background-color: var(--color-darkroyalblue);
+  color: var(--color-white);
 }
 
 .btn-coral {
-    background-color: var(--color-coral);
-    border: none;
-    color: var(--color-white);
+  background-color: var(--color-coral);
+  border: none;
+  color: var(--color-white);
 }
 .btn-coral:hover {
-    background-color: var(--color-darkcoral);
-    color: var(--color-white);
+  background-color: var(--color-darkcoral);
+  color: var(--color-white);
 }
 
 .hero-section {
-    position: relative;
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg') no-repeat center center/cover;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  position: relative;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg')
+      no-repeat center center/cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* for tablet screen */
 @media only screen and (min-width: 768px) {
-    
 }
-
 
 /* for desktop screen */
 @media only screen and (min-width: 992px) {
-    
 }
