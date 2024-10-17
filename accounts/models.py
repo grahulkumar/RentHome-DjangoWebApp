@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.utils import timezone
 
 # custom manager
 from django.contrib.auth.models import BaseUserManager
@@ -47,3 +48,11 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.name
+
+class ResetPassword(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE,default=1)  
+    code_hash = models.CharField(max_length=64) 
+    created_at = models.DateTimeField(default=timezone.now)
+    
+    def __str__(self):
+        return f"Verification code is {self.code_hash}"
