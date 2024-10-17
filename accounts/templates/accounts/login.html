@@ -43,7 +43,7 @@
                         <input class="form-check-input me-1" type="checkbox" id="showpass">
                         <label class="form-check-label" for="showpass">show password</label>
                     </div>
-                    <a href="#" class="no-line">forgot password?</a>
+                    <a href="{% url 'forgot-password' %}" class="fw-semibold no-line">forgot password?</a>
                 </div>
 
                 <div class="text-danger mb-2 fw-semibold text-center" id="msg">{{msg}}</div>
