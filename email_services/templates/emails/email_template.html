@@ -13,20 +13,12 @@
       }
       .email-container {
         max-width: 600px;
+        border: 2px solid #0d6efd;
         margin: 0 auto;
         background-color: #ffffff;
         padding: 10px;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .logo-container {
-        text-align: center;
-        margin-bottom: 25px;
-        background-color: #0d6efd;
-        color: white;
-        border-radius: 8px;
-        padding: 3px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px grey;
       }
       .logo-container img {
         max-width: 150px;
@@ -34,10 +26,26 @@
       .message-container {
         text-align: center;
         margin: 25px 0;
+        font-size: large;
       }
       .message-container p {
-        font-size: 18px;
-        line-height: 1.6;
+        text-indent: 4px;
+        line-height: 1.5;
+      }
+      .message-container a {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 10px 10px;
+        color: white;
+        background-color: #0d6efd;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .message-container a:hover {
+        background-color: #0a58ca;
       }
       .footer {
         text-align: center;
@@ -57,16 +65,16 @@
   </head>
   <body>
     <div class="email-container">
-      <!-- Logo Section -->
-      <div class="logo-container">
-        <h1 style="margin-bottom: 0px">Rent Home</h1>
-        <p style="margin-top: 0px">Easy renting here</p>
-      </div>
-
       <!-- Dynamic Message Section -->
       <div class="message-container">
-        <p>Hello {{name}}</p>
+        <h3>Hello {{name}}</h3>
         <p>{{ message }}</p>
+        <p>{{ message1 }}</p>
+        <p>{{ message2 }}</p>
+
+        {% if url %}
+        <a href="{{url}}">Click here</a>
+        {% endif %}
       </div>
 
       <!-- Footer Section -->
