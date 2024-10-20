@@ -1,0 +1,114 @@
+.welcome-section {
+    position: relative;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg') no-repeat center center/cover fixed;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.welcome-section h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    word-spacing: 0.25rem;
+    text-indent: 1rem;
+    line-height: 1.7;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.button-group a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.role-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+}
+
+.role-card .card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.role-card h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.role-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Adjust button layout for small screens */
+@media screen and (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 3.5rem;
+    }
+
+    .welcome-section p {
+        font-size: 1.2rem;
+    }
+
+    .button-group a {
+        padding: 10px 20px;
+    }
+}
+
+/* For max-width 576px, stack buttons vertically and ensure proper spacing */
+@media screen and (max-width: 576px) {
+    .welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+    
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Add spacing between buttons */
+    }
+
+    .button-group a {
+        padding: 10px 30px;
+        width: 100%; /* Make buttons full width */
+        font-size: 1rem;
+    }
+}
