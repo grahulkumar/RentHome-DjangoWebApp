@@ -8,7 +8,7 @@
   --color-coral: #ff6f61;
   --color-darkcoral: #e65b50;
   --color-seagreen: #2e8b57;
-  --color-lightgrey:  #f9f3e9;
+  --color-lightgrey:  #f8f9fa;
   --color-darkslategrey: #2f4f4f;
   --color-dimgrey: #696969;
   --color-forestgreen: #228b22;
@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: var(--color-lightgrey);
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   scroll-behavior: smooth;
