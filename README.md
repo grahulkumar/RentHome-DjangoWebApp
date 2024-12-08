@@ -1,7 +1,7 @@
 # 🏠 RentHome  
 A Full-Stack Web Application for Property Rental Management.
 
-![Django](https://img.shields.io/badge/Django-5.0-green) ![Python](https://img.shields.io/badge/Python-3.10-blue) ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple) ![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
+![Django](https://img.shields.io/badge/Django-5.0-green) ![Python](https://img.shields.io/badge/Python-3.12-blue) ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple) ![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
 
 RentHome is a user-friendly platform where property owners can list properties and renters can search, view, and rent homes effortlessly.
 
@@ -51,42 +51,49 @@ This project is licensed under a **custom license.**
 - Virtual Environment (`venv`)
 
 ### Installation
+
 1. Clone the repository:
-   ```bash
+
+```bash
    git clone https://github.com/your-username/RentHome.git
    cd RentHome
 ```
 
 2. Set up the virtual environment:
-   ```bash
+
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
-   ```bash
+
+```python
 pip install -r requirements.txt
 ```
 
 4. Configure the database:
-   ```bash
+
+```
 Update the DATABASES settings in rentalhome/settings.py with your MySQL credentials.
 ```
 
-
 5. Apply migrations:
-  ```bash
+
+```python
 python manage.py makemigrations
 python manage.py migrate
 ```
 
 6. Run the development server:
-   ```bash
+
+```python
 python manage.py runserver
 ```
 
 7. Open your browser and visit:
-   ```bash
+
+```bash
  http://127.0.0.1:8000/
 ```
 
